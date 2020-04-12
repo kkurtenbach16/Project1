@@ -1,27 +1,33 @@
 html {
     font-family: sans-serif;
     height: 100%;
-    background-color: #DCDCDC;
+    
 }
 
 body {
     height: 100%;
     margin: 0;
+    background-color: gainsboro;
 }
 
 nav > ul{
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: #2F4F4F;
+    
 }
 
 nav > ul > li {
     padding: 8px;
     font-size: 20px;
+    color: white;
+}
+
+nav > ul > li > a {
     color: white;
 }
 
@@ -34,8 +40,12 @@ nav > ul > li:hover {
     background-color: #111;
 }
 
+a {
+    text-decoration: none;
+}
+
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/middleAttack.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/middle-attack.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,15 +63,62 @@ nav > ul > li:hover {
     color: white;
   }
 
-  #body-header {
+  .body-header {
       display: flex;
       flex-direction: row;
+      color: #000080;
+  }
+
+  .body-header .body-left-header {
       justify-content: flex-start;
+      flex: .8;
       padding-left: 20px;
   }
 
-  #body-text {
+  .body-header .body-right-header {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+  }
+
+  .body-header > #roster-header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+  .body-content {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+  }
+
+  .body-content .text {
+      display: flex;
+      flex: .8;
       padding-left: 20px;
-      width: 50%;
+      line-height: 1.5;
       font-size: 18px;
+  }
+
+  .body-content .media {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      border: #111;      
+  }
+
+  #roster-table-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex: 1;
+  }
+
+#roster-table, th, td {
+    font-family: Verdana;
+    font-size: 18px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 13px; 
   }
