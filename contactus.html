@@ -2,8 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="true">
         <title>UW-Eau Claire Men's Volleyball</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/contactus.css">
+        <link rel="shortcut icon" type="image/png" href="./images/volleyballfavicon.png">
     </head>
     <body>
         <div class="hero-image">
@@ -14,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="roster.html">Roster</a></a></li>
+                <li><a href="roster.html">Roster</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li class="active"><a href="contactus.html">Contact Us</a></li>
@@ -41,7 +46,7 @@
               </div>
               <div id="loginPopup">
                 <div class="form-popup" id="popupForm">
-                  <form action="/action_page.php" class="form-container">
+                  <form action="success.html" class="form-container">
                     <h2>Enter In Your Contact Information</h2>
                     <label for="email">
                     <strong>E-mail</strong>
@@ -51,11 +56,12 @@
                     <strong>Name</strong>
                     </label>
                     <input type="password" id="psw" placeholder="Your Name" name="psw" required>
-                    <button type="submit" class="btn">Log in</button>
+                    <button type="submit" class="btn">Send</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                   </form>
                 </div>
               </div>
               <script src="./js/contactpopup.js"></script>
+        </div>
     </body>
 </html>

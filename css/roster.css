@@ -1,0 +1,16 @@
+#roster-table-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+}
+
+#roster-table, th, td {
+  font-family: Verdana;
+  font-size: 18px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 13px;
+  color: #000080;
+}
