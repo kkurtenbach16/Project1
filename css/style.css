@@ -81,7 +81,7 @@ a {
       justify-content: center;
   }
 
-  .body-header > #roster-header {
+  .body-header > #middle-header {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -93,13 +93,37 @@ a {
       margin: 0;
   }
 
-  .body-content .text {
+  .body-content .body-left-header {
+    justify-content: flex-start;
+    flex: 1;
+    padding-left: 20px;
+    color: #000080;
+  }
+
+  .body-content .body-right-header {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    color: #000080;
+  }
+
+  .body-content .left-text {
       display: flex;
       flex: .8;
       padding-left: 20px;
       line-height: 1.5;
       font-size: 18px;
+      color: black;
   }
+
+  .body-content .right-text {
+    display: flex;
+    flex: .8;
+    padding-left: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: black;
+}
 
   .body-content .media {
       display: flex;
@@ -113,6 +137,7 @@ a {
       flex-direction: row;
       justify-content: center;
       flex: 1;
+      padding: 50px;
   }
 
 #roster-table, th, td {
@@ -120,5 +145,57 @@ a {
     font-size: 18px;
     border: 2px solid black;
     border-collapse: collapse;
-    padding: 13px; 
+    padding: 13px;
+    color: #000080;
+  }
+
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+      justify-content: center;
+  }
+
+  .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+  }
+
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+  }
+
+  #schedule-table-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+  }
+
+  #schedule-table, th, td {
+    font-family: Verdana;
+    font-size: 18px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 13px;
+    color: #000080;
+  }
+
+
+  @media screen and (max-width: 800px) {
+      .column {
+          flex: 50%;
+          max-width: 50%;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+      .responsive-gallery {
+          flex: 100%;
+          max-width: 100%;
+      }
   }
