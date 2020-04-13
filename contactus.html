@@ -20,5 +20,42 @@
                 <li class="active"><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
+        <header>
+            <div class="body-header">
+                <div class="body-left-header">
+                    <h1>How You Can Reach Us</h1>
+                </div>
+                <div class="body-right-header">
+                    <h2>We'd Love To Get In Contact With You!</h2>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="left-text">
+                <p>We would love to hear from you! You can reach us via Email or Phone.<br>Email: mensvb@uwec.edu<br>Phone: 715-297-6578</p>
+            </div>
+            <div class="open-btn">
+                <button class="open-button" onclick="openForm()">
+                <strong>Contact Us</strong>
+                </button>
+              </div>
+              <div id="loginPopup">
+                <div class="form-popup" id="popupForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h2>Enter In Your Contact Information</h2>
+                    <label for="email">
+                    <strong>E-mail</strong>
+                    </label>
+                    <input type="text" id="email" placeholder="Your Email" name="email" required>
+                    <label for="psw">
+                    <strong>Name</strong>
+                    </label>
+                    <input type="password" id="psw" placeholder="Your Name" name="psw" required>
+                    <button type="submit" class="btn">Log in</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+              </div>
+              <script src="./js/contactpopup.js"></script>
     </body>
 </html>
